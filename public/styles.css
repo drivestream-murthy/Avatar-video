@@ -1,0 +1,8 @@
+:root { --w: 420px; --radius: 16px; }
+*{box-sizing:border-box} body{font-family:system-ui;display:flex;justify-content:center;padding:16px;background:#0f1115;color:#eaeef5}
+#app{width:min(100%,var(--w))} header{margin-bottom:10px} h1{font-size:18px;margin:0 0 4px} .muted{opacity:.7;margin:0;font-size:12px}
+#ytWrap,#vidWrap{margin-bottom:10px} #ytWrap.hidden,#vidWrap.hidden{display:none} #ytPlayer,#vid{width:100%;aspect-ratio:16/9;border-radius:12px;background:#000}
+#stage{width:100%;aspect-ratio:9/16;position:relative;overflow:hidden;border-radius:var(--radius);background:#1b1f2a center/cover no-repeat;box-shadow:0 8px 30px rgba(0,0,0,.35)}
+#avatar{position:absolute;inset:0;transition:transform .3s ease} .min{transform:scale(.86) translateY(8%);transform-origin:center bottom}
+form{display:flex;gap:8px;margin-top:10px} input{flex:1;padding:10px;border:1px solid #2a2f3a;border-radius:10px;background:#0f1320;color:#eaeef5}
+button{padding:10px 14px;border-radius:10px;border:1px solid #2a2f3a;background:#151a28;color:#eaeef5;cursor:pointer} button:hover{background:#1c2336}
